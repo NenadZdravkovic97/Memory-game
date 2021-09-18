@@ -105,7 +105,9 @@ let checkIfMatch = function () {
 
     result.textContent = matched.length;
     if (matched.length === cardsArr.length / 2) {
-        alert('You won!');
+        setTimeout(() => {
+            alert('You won the game');
+        }, 600);
     }
 };
 
